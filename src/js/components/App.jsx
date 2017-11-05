@@ -23,7 +23,7 @@ const App = () => (
         <Route exact path="/" component={Landing} />
         <PropsRoute path="/login" component={Login} />
         <PrivateRoute path="/me" component={MeContainer} redirectTo="/login" />
-        <PrivateRoute exact path="/profile-index" component={ProfileIndexContainer} redirectTo="/my-profile/login" />
+        <PrivateRoute path="/profile-index" component={ProfileIndexContainer} redirectTo="/my-profile/login" />
         <PrivateRoute path="/my-profile" component={ProfileContainer} redirectTo="/login" />
         <Route component={FourOhFour} />
       </Switch>
