@@ -2,18 +2,12 @@
 
 import React from 'react';
 
-const Me = () => <div>Me container</div>;
-
-// const Me = ({ currentUser, profile }: Object) =>
-//   <div>
-//     <h2>This is the Me Page</h2>
-//     <p>
-//       {currentUser.createdOn || 'Created on Placeholder'}
-//       <br />
-//       {currentUser.displayName || 'Placeholder me name'}
-//       <br />
-//       {profile.story || 'Placeholder for user story'}
-//     </p>
-//   </div>;
+const Me = ({ currentUser }: Object) => (
+  <div>
+    <pre>
+      <code>{JSON.stringify(currentUser, null, 4)}</code>
+    </pre>
+  </div>
+);
 
 export default Me;

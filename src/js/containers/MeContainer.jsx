@@ -3,6 +3,6 @@
 import { connect } from 'react-redux';
 import Me from '../components/Me';
 
-const mapStateToProps = ({ currentUser, profile }) => ({ currentUser, profile });
+const mapStateToProps = ({ currentUser }) => ({ currentUser });
 
 export default connect(mapStateToProps)(Me);
