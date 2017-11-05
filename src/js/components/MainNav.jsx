@@ -33,7 +33,7 @@ const MainNav = ({ classes }: Object) => (
           <NavLink to="/me">Me</NavLink>
         </li>
         <li>
-          <NavLink to="/profile">Profile</NavLink>
+          <NavLink to="/my-profile">Profile</NavLink>
         </li>
       </ul>
     </nav>
